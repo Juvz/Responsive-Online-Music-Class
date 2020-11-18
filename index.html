@@ -6,6 +6,7 @@
         <title>Front End Dev Course</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6989875bad.js" crossorigin="anonymous"></script>
         </head>
         <body>
         <!-- First Div -->
@@ -94,5 +95,24 @@
         </div>
         </div>
     </footer>
+    
+        <script>
+
+            var menu = document.getElementById('menu');
+            var nav = document.getElementById('nav');
+            var exit = document.getElementById('exit');
+
+            menu.addEventListener('click', function(e) {
+                nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+            exit.addEventListener('click', function(e) {
+                nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+        </script>
+
     </body>
 </html>
